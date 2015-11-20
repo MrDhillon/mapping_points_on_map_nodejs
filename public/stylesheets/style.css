@@ -1,5 +1,8 @@
+/*Universal*/
+
 body {
   padding: 50px;
+  padding-top: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,4 +12,10 @@ a {
 
 #map {
   height: 100%;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  text-align:  center;
 }
