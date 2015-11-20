@@ -12,6 +12,8 @@ module.exports = function(sequelize, DataTypes) {
     total_visitors: DataTypes.INTEGER,
     campaign_duration: DataTypes.INTEGER
   }, {
+    timestamps: false
+  },{
     classMethods: {
       associate: function(models) {
         // there are no associations
