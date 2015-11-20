@@ -14,9 +14,9 @@
   },
   "production": {
     "username": "awsharman",
-    "password": "l6y5z159",
-    "database": "turnstyle",
-    "host": "mydbinstance.cez01vou6m9k.us-west-2.rds.amazonaws.com",
+    "password": "l6y5a159",
+    "database": "ebdb",
+    "host": "aa1wvaveqqpxjvo.cez01vou6m9k.us-west-2.rds.amazonaws.com",
     "dialect": "postgres"
   }
 }
