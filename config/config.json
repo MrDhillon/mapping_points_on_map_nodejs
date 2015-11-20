@@ -13,11 +13,6 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
-    "username": "enmfxtigppjjqs",
-    "password": "J1s2xan6ZHcl5-Ma7TWY1U5Kww",
-    "database": "dajo9j75tb437e",
-    "host": "ec2-54-83-201-196.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL"
   }
 }
