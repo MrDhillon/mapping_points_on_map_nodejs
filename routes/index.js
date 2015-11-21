@@ -20,14 +20,16 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/',function(req,res){
-  // user marker id to query databse for location
+  // user marker id to query databse for location ---- harman
   models.location.findAll({
     where: {
       id: req.body.marker
     }
   }).then(function(data){
+    // promise ---- harman
     res.send(data);
   }).catch(function(err){
+    // catch error ---- harman
     console.log(err);
     res.render('index',{ title: "TurnStyle Mapping"});
   });

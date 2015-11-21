@@ -11,18 +11,17 @@ function initMap() {
       position: {lat: <%=locations[i].latitude %>, lng: <%= locations[i].longitude %>},
       locationId: <%= locations[i].id %>
     });
-
-    google.maps.event.addListener(marker,'click', function(){
-      var $id = this.locationId;
-      console.log($id);
-      $.post('/',{marker: $id }, function(res){
-        console.log(res);
-        $('.modal-content').html("<p> Store name: "+res[0].name+"</p>\
-                                    <p> Located in: "+res[0].city+","+res[0].country+"</p>\
-                                    <p> Start of Day: "+res[0].start_of_day+"</p>")
-       $('#myModal').modal('toggle');
-      })
+    var cityCircle = new google.maps.Circle({
+      strokeColor: '#FF0000',
+      strokeOpacity: 1.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: Math.sqrt(<%=locations[i].total_visitors%>)*0.001,
+      map: map,
+      center: marker.position,
+      radius: 100
     });
+    google.maps.event.addListener(marker,'click', markerPost);
   <% } %>
 }
 </script>
