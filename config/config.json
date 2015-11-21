@@ -13,6 +13,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "host": "aa1wvaveqqpxjvo.cez01vou6m9k.us-west-2.rds.amazonaws.com",
+    "database": "ebdb",
+    "username": "awsharman",
+    "password": "l6y5a159",
+    "data_source_provider":"rds",
+    "dialect": "postgres"
   }
 }
