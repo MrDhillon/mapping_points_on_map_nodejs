@@ -15,7 +15,7 @@ function initMap() {
       strokeOpacity: 1.8,
       strokeWeight: 2,
       fillColor: '#FF0000',
-      fillOpacity: Math.sqrt(<%=locations[i].total_visitors%>)*0.001,
+      fillOpacity: (<%=locations[i].total_visitors%>)/(30000),
       map: map,
       center: marker.position,
       radius: 100
