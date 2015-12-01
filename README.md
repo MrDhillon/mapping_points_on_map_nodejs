@@ -1,4 +1,4 @@
-# Turnstyle mapping challenge
+# Mapping challenge
 
 This application plots store markers on a map and
 when clicked displays information about that particular
